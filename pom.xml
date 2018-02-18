@@ -54,7 +54,7 @@
                     <server>TomcatServer</server>
                     <username>tomcat_manager</username>
                     <password>1</password>
-                    <path>/</path>
+                    <path>/railway</path>
                 </configuration>
             </plugin>
         </plugins>
