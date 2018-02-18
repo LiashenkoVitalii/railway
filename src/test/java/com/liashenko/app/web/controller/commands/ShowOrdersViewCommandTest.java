@@ -31,7 +31,7 @@ public class ShowOrdersViewCommandTest {
     public void returnsExpectedPath() throws ServletException, IOException {
         HttpServletRequest request = mock(HttpServletRequest.class);
         HttpServletResponse response = mock(HttpServletResponse.class);
-        String expectedPath = PageManagerConf.getInstance().getProperty(PageManagerConf.INDEX_PAGE_PATH);
+        String expectedPath = PageManagerConf.getInstance().getProperty(PageManagerConf.ORDERS_PAGE_PATH);
         String actualPath = command.execute(request, response);
         assertEquals(expectedPath, actualPath);
     }

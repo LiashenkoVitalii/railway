@@ -33,7 +33,7 @@ public class ShowAdminWarningCommandTest {
     public void returnsExpectedPathWhen() throws ServletException, IOException {
         HttpServletRequest request = mock(HttpServletRequest.class);
         HttpServletResponse response = mock(HttpServletResponse.class);
-        String expectedPath = PageManagerConf.getInstance().getProperty(PageManagerConf.ERROR_PAGE_PATH);
+        String expectedPath = PageManagerConf.getInstance().getProperty(PageManagerConf.ADMIN_WARNING_PAGE_PATH);
         String actualPath = command.execute(request, response);
         assertEquals(expectedPath, actualPath);
     }
