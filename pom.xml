@@ -21,6 +21,13 @@
         <mysql-connector-java.version>8.0.8-dmr</mysql-connector-java.version>
         <javax.servlet.jsp-api.version>2.2</javax.servlet.jsp-api.version>
         <gson.version>2.3.1</gson.version>
+        <jacoco.plugin.version>0.8.0</jacoco.plugin.version>
+        <maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>
+        <maven.war.plugin.version>2.1.1</maven.war.plugin.version>
+        <tomcat7.maven.plugin.version>2.2</tomcat7.maven.plugin.version>
+        <java.version>1.8</java.version>
+        <tomcat-juli.version>9.0.2</tomcat-juli.version>
+        <mocking.version>1.9.5</mocking.version>
 
     </properties>
 
@@ -30,25 +37,44 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>${maven.compiler.plugin.version}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.1.1</version>
+                <version>${maven.war.plugin.version}</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
+                <version>${tomcat7.maven.plugin.version}</version>
                 <configuration>
                     <url>http://localhost:8181/manager/text</url>
                     <!--add this credentials to the ./maven/settings.xml in the maven directory-->
@@ -106,13 +132,13 @@
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-juli</artifactId>
-            <version>9.0.2</version>
+            <version>${tomcat-juli.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
-            <version>1.9.5</version>
+            <version>${mocking.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

@@ -1,0 +1,130 @@
+/*.footer{*/
+/*width:100%;*/
+/*float:left;*/
+/*background:#333;*/
+/*height:50px;*/
+/*position: absolute;*/
+/*}*/
+
+/*.typeahead { z-index: 1051; }*/
+
+/******msg containers*********/
+.b-container {
+    font-size: 15px;
+    color: green;
+}
+
+.a-container {
+    font-size: 15px;
+    color: #ff0000;
+}
+
+/*** login view ***/
+.icon-small {
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-medium {
+    height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.colorgraph {
+    height: 5px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+.left {
+    margin-left: 15px;
+}
+
+/*button space */
+.btn-space {
+    margin-right: 7px;
+}
+
+/*********************************/
+/*.bs-example {*/
+/*font-family: sans-serif;*/
+/*position: relative;*/
+/*margin: 100px;*/
+/*}*/
+/*.typeahead, .tt-query, .tt-hint {*/
+/*border: 2px solid #CCCCCC;*/
+/*border-radius: 8px;*/
+/*font-size: 22px; !* Set input font size *!*/
+/*height: 30px;*/
+/*line-height: 30px;*/
+/*outline: medium none;*/
+/*padding: 8px 12px;*/
+/*width: 396px;*/
+/*}*/
+/*.typeahead {*/
+/*background-color: #FFFFFF;*/
+/*}*/
+/*.typeahead:focus {*/
+/*border: 2px solid #0097CF;*/
+/*}*/
+/*.tt-query {*/
+/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;*/
+/*}*/
+/*.tt-hint {*/
+/*color: #999999;*/
+/*}*/
+/*.tt-menu {*/
+/*background-color: #FFFFFF;*/
+/*border: 1px solid rgba(0, 0, 0, 0.2);*/
+/*border-radius: 8px;*/
+/*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/
+/*margin-top: 12px;*/
+/*padding: 8px 0;*/
+/*width: 422px;*/
+/*}*/
+/*.tt-suggestion {*/
+/*font-size: 22px;  !* Set suggestion dropdown font size *!*/
+/*padding: 3px 20px;*/
+/*}*/
+/*.tt-suggestion:hover {*/
+/*cursor: pointer;*/
+/*background-color: #0097CF;*/
+/*color: #FFFFFF;*/
+/*}*/
+/*.tt-suggestion p {*/
+/*margin: 0;*/
+/*}*/
+
+/*!*************************navbar******************************************!*/
+/*!* цвет фона и рамки навигационного меню *!*/
+/*.navbar-default {*/
+/*background-color: #F8F8F8;*/
+/*border-color: #E7E7E7;*/
+/*}*/
+/*!* цвет текста, содержащий название сайта или бренда *!*/
+/*.navbar-default .navbar-brand {*/
+/*color: #777;*/
+/*}*/
+/*!* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе *!*/
+/*.navbar-default .navbar-brand:hover,*/
+/*.navbar-default .navbar-brand:focus {*/
+/*color: #5E5E5E;*/
+/*}*/
+/*!* Цвет пунктов навигационного меню *!*/
+/*.navbar-default .navbar-nav > li > a {*/
+/*color: #777;*/
+/*}*/
+
+
