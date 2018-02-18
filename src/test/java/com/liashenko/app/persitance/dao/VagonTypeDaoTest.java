@@ -4,10 +4,7 @@ import com.liashenko.app.persistance.dao.VagonTypeDao;
 import com.liashenko.app.persistance.dao.exceptions.DAOException;
 import com.liashenko.app.persistance.dao.mysql.VagonTypeDaoImpl;
 import com.liashenko.app.persistance.domain.VagonType;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import test_utils.DbInitFixtures;
@@ -21,6 +18,7 @@ import java.util.ResourceBundle;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
+@Ignore
 @RunWith(value = Parameterized.class)
 public class VagonTypeDaoTest extends TestDbUtil {
 

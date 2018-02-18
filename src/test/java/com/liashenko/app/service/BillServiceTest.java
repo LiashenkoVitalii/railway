@@ -2,6 +2,7 @@ package com.liashenko.app.service;
 
 import com.liashenko.app.service.dto.BillDto;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +15,7 @@ import java.util.ResourceBundle;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+@Ignore
 @RunWith(value = Parameterized.class)
 public class BillServiceTest extends TestDbUtil {
     @Rule

@@ -4,10 +4,7 @@ import com.liashenko.app.persistance.dao.PricePerKmForVagonDao;
 import com.liashenko.app.persistance.dao.exceptions.DAOException;
 import com.liashenko.app.persistance.dao.mysql.PricePerKmForVagonDaoImpl;
 import com.liashenko.app.persistance.domain.PricePerKmForVagon;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import test_utils.DbInitFixtures;
@@ -18,7 +15,7 @@ import java.util.ResourceBundle;
 
 import static junit.framework.TestCase.*;
 
-
+@Ignore
 @RunWith(value = Parameterized.class)
 public class PricePerKmForVagonDaoTest extends TestDbUtil {
     private static final Integer NOT_EXISTING_VAGON_TYPE_KEY = Integer.MAX_VALUE;

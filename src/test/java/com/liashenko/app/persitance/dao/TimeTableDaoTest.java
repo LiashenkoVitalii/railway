@@ -4,10 +4,7 @@ import com.liashenko.app.persistance.dao.TimeTableDao;
 import com.liashenko.app.persistance.dao.exceptions.DAOException;
 import com.liashenko.app.persistance.dao.mysql.TimeTableDaoImpl;
 import com.liashenko.app.persistance.domain.TimeTable;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import test_utils.DbInitFixtures;
@@ -24,6 +21,7 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
+@Ignore
 @RunWith(value = Parameterized.class)
 public class TimeTableDaoTest extends TestDbUtil {
     private static final Long NOT_EXISTING_ROUTE_ID_KEY = Long.MAX_VALUE;

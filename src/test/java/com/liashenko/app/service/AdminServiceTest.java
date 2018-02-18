@@ -4,6 +4,7 @@ import com.liashenko.app.service.dto.RoleDto;
 import com.liashenko.app.service.dto.UserDto;
 import com.liashenko.app.service.exceptions.ServiceException;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,6 +19,7 @@ import java.util.ResourceBundle;
 
 import static junit.framework.TestCase.*;
 
+@Ignore
 @RunWith(value = Parameterized.class)
 public class AdminServiceTest extends TestDbUtil {
 

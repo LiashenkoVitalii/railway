@@ -4,10 +4,7 @@ import com.liashenko.app.persistance.dao.TrainDao;
 import com.liashenko.app.persistance.dao.exceptions.DAOException;
 import com.liashenko.app.persistance.dao.mysql.TrainDaoImpl;
 import com.liashenko.app.persistance.domain.Train;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import test_utils.DbInitFixtures;
@@ -20,6 +17,7 @@ import java.util.ResourceBundle;
 
 import static junit.framework.TestCase.*;
 
+@Ignore
 @RunWith(value = Parameterized.class)
 public class TrainDaoTest extends TestDbUtil {
     private static final Long NOT_EXISTING_ROUTE_ID_KEY = Long.MAX_VALUE;

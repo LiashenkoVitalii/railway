@@ -4,10 +4,7 @@ import com.liashenko.app.persistance.dao.StationDao;
 import com.liashenko.app.persistance.dao.exceptions.DAOException;
 import com.liashenko.app.persistance.dao.mysql.StationDaoImpl;
 import com.liashenko.app.persistance.domain.Station;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import test_utils.DbInitFixtures;
@@ -21,6 +18,7 @@ import java.util.ResourceBundle;
 
 import static junit.framework.TestCase.*;
 
+@Ignore
 @RunWith(value = Parameterized.class)
 public class StationDaoTest extends TestDbUtil {
     private static final String PATTERN_DOES_NOT_MATCH_ANY_STATION = "////";
