@@ -52,6 +52,8 @@
                 <configuration>
                     <url>http://localhost:8181/manager/text</url>
                     <server>TomcatServer</server>
+                    <username>tomcat_manager</username>
+                    <password>1</password>
                     <path>/</path>
                 </configuration>
             </plugin>
