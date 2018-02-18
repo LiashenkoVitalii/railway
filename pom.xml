@@ -51,6 +51,7 @@
                 <version>2.2</version>
                 <configuration>
                     <url>http://localhost:8181/manager/text</url>
+                    <!--add this credentials to the ./maven/settings.xml in the maven directory-->
                     <server>TomcatServer</server>
                     <username>tomcat_manager</username>
                     <password>1</password>
