@@ -5,6 +5,7 @@ import com.liashenko.app.service.ServiceTestFactoryImpl;
 import com.liashenko.app.web.controller.commands.registration.CheckIfEmailExistsCommand;
 import com.liashenko.app.web.controller.manager.PageManagerConf;
 import com.liashenko.app.web.controller.utils.SessionAttrInitializer;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -21,6 +22,7 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+@Ignore
 @RunWith(MockitoJUnitRunner.class)
 public class CheckIfEmailExistsCommandTest {
     private ServiceFactory serviceFactory = ServiceTestFactoryImpl.getInstance();
