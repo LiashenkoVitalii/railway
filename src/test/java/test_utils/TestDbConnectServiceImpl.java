@@ -15,7 +15,7 @@ public class TestDbConnectServiceImpl implements DbConnectionService {
 
     //  Test database credentials
     private static final String USER = "root";
-    private static final String PASS = "1";
+    private static final String PASS = "root";
 
     @Override
     public void rollback(Connection connection) {
