@@ -8,7 +8,7 @@
               driverClassName="com.mysql.cj.jdbc.Driver"
               url="jdbc:mysql://localhost:3306/railway?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"
               username="root"
-              password="1"
+              password="root"
               maxTotal="50"
               maxIdle="30"
               maxWaitMillis="10000"/>
