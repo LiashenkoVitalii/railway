@@ -18,7 +18,7 @@
         <javaee-web-api.version>8.0</javaee-web-api.version>
         <javax.servlet-api.version>4.0.0</javax.servlet-api.version>
         <log4j.version>2.10.0</log4j.version>
-        <mysql-connector-java.version>8.0.8-dmr</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
         <javax.servlet.jsp-api.version>2.2</javax.servlet.jsp-api.version>
         <gson.version>2.3.1</gson.version>
         <jacoco.plugin.version>0.8.0</jacoco.plugin.version>
@@ -84,8 +84,8 @@
                     <url>http://localhost:8181/manager/text</url>
                     <!--add this credentials to the ./maven/settings.xml in the maven directory-->
                     <server>TomcatServer</server>
-                    <username>tomcat_manager</username>
-                    <password>1</password>
+                    <username>tomcat</username>
+                    <password>s3cret</password>
                     <path>/railway</path>
                     <update>true</update>
                 </configuration>
