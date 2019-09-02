@@ -2,6 +2,11 @@ plugins {
     id 'war'
 }
 
+war {
+    archiveBaseName = 'railway'
+    archiveExtension ='.war'
+}
+
 repositories {
     mavenCentral()
 }

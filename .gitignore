@@ -1,13 +1,14 @@
 #IDE
-.idea
-railway.iml
+.idea/
+*.iml
 
 #logs
-/railway_app
+railway_app/
 
 #build-tool
-/build
-/gradle
-/target
+build/
+gradle/
+.gradle/
+target/
 gradlew
 gradlew.bat
