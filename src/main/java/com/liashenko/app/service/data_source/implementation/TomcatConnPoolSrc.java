@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class TomcatConnPoolSrc implements DbConnectionService {
@@ -19,7 +20,7 @@ public class TomcatConnPoolSrc implements DbConnectionService {
     private TomcatConnPoolSrc() {
         try {
             InitialContext ic = new InitialContext();
-            dataSource = (javax.sql.DataSource) ic.lookup(JNDI_NODE);
+//            dataSource = (javax.sql.DataSource) ic.lookup(JNDI_NODE);
         } catch (NamingException e) {
             classLogger.error(e);
             throw new DbConnException("Couldn't get connection with database.");
@@ -65,11 +66,13 @@ public class TomcatConnPoolSrc implements DbConnectionService {
         Connection conn = null;
         try {
             if (dataSource != null) {
-                conn = dataSource.getConnection();
+//                conn = dataSource.getConnection();
+                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/railway?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;autoReconnect=true&amp;useSSL=false&amp;requireSSL=false","root","root123");
                 if (conn == null) throw new SQLException("Couldn't get connection with database. Connection is null");
             }
         } catch (SQLException e) {
-            classLogger.error(e);
+            e.printStackTrace();
+//            classLogger.error(e);
             throw new DbConnException("Couldn't get connection with database");
         }
         return conn;
