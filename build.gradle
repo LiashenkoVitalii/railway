@@ -1,6 +1,19 @@
-plugins {
-    id 'war'
+//plugins {
+//    id 'war'
+//}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.0'
+    }
 }
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'com.bmuschko.tomcat'
 
 war {
     archiveFileName = 'railway.war'
@@ -12,13 +25,24 @@ repositories {
 
 dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:4.0.0'
-    providedCompile 'javax.servlet:jstl:1.2'
     providedCompile 'javax.servlet.jsp:jsp-api:2.2'
-    providedCompile 'com.google.code.gson:gson:2.3.1'
-    providedCompile 'org.apache.logging.log4j:log4j-api:2.10.0'
-    providedCompile 'org.apache.logging.log4j:log4j-core:2.10.0'
-    providedCompile 'mysql:mysql-connector-java:8.0.17'
-    providedCompile 'org.apache.tomcat:tomcat-juli:9.0.2'
+    compile 'javax.servlet:jstl:1.2'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'org.apache.logging.log4j:log4j-api:2.10.0'
+    compile 'org.apache.logging.log4j:log4j-core:2.10.0'
+    compile 'mysql:mysql-connector-java:8.0.17'
+    compile 'org.apache.tomcat:tomcat-juli:9.0.2'
     testCompile 'org.mockito:mockito-all:1.9.5'
     testCompile 'junit:junit:4.12'
+}
+
+dependencies {
+    def tomcatVersion = '9.0.24'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+}
+
+tomcat {
+    httpProtocol = 'org.apache.coyote.http11.Http11Nio2Protocol'
+    ajpProtocol  = 'org.apache.coyote.ajp.AjpNio2Protocol'
 }
