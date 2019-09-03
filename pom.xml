@@ -15,7 +15,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jstl.version>1.2</jstl.version>
         <junit.version>4.12</junit.version>
-        <javaee-web-api.version>8.0</javaee-web-api.version>
         <javax.servlet-api.version>4.0.0</javax.servlet-api.version>
         <log4j.version>2.10.0</log4j.version>
         <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
